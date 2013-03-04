@@ -1,0 +1,64 @@
+body h1{
+	margin:0px auto;
+	width:768px;
+	
+}
+#backboneMapWidget{
+	margin:0px auto;
+	width:768px;
+	border:10px solid #150517;
+	min-height:530px;
+	background-color:#111111;
+
+}
+#mapContainer{
+	width:75%;
+	float:left;
+	position:relative;
+
+}
+#mapContainer .mapLoader{
+	position:absolute;
+	top:45%;
+	left:50%;
+}
+#placeContainer{
+	width:21%;
+	float:left;
+	scroll:auto;
+	background:#111;
+	height:100%;
+	overflow:hidden;
+	height:530px;
+	border-radius:10px;
+}
+
+ul{
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+	padding:10px;
+	color:#FDD017;
+}
+
+li{
+	margin:5px;
+	padding:10px;
+	display:block;
+	text-decoration: underline;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1; 
+}
+.cf:before, .cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}

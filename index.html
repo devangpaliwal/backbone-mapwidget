@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Backbone Map Widget</title>
+
+	<link href="css/base.css" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+</head>
+<body>
+	<br><h1>Backbone Map Widget</h1><br>
+	<div id="backboneMapWidget" class="cf">
+			
+	</div>
+	<br>
+
+	<script id="mapTemplate" src="templates/mapTemplate.tmpl" type="text/template">
+		<img class="map" scr="about:blank" style="width:100%;"> </img>
+		<div class="mapLoader"><img src="loader.gif"></img></div>
+	</script>
+	<script id="placeTemplate" src="templates/place.tmpl" type="text/template">
+		<% for(var index in places){ console.log("OMG",places)%>
+			<li><%=places[index]['name']%></li>
+		<%}%>
+	</script>
+
+	<script src="lib/jquery-1.4.min.js"></script>
+	<script src="lib/underscore.1.4.3.js"></script>
+	<script src="lib/backbone.0.9.9.js"></script>	
+	
+
+	<script src="main.js"></script>
+	<script src="views/map.js"></script>
+	<script src="views/place.js"></script>
+	<script src="views/app.js"></script>
+	
+	
+
+	
+</body>
+</html>
